@@ -2,19 +2,168 @@
 <html lang="en">
 <head>
     <meta charset='utf-8'>
-    <title>OSU CS Course Scheduler</title>
+    <title>OSU CS/Math Course Scheduler</title>
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     <script src='index.js'></script>
 </head>
 <body>
     <header>
-        <h1>OSU CS Course Scheduler</h1>
+        <h1>OSU CS/Math Course Scheduler</h1>
     </header>
     <div id="app">
         <main>
             <section>
                 <form action="/results" method="POST">
-                    
+                    <fieldset>
+                        <legend>Discuss your major and track here.</legend>
+                            <p>What is your major?</p>
+                                <label for="cs">
+                                    <input type="radio" name="major" value="Computer Science"/>
+                                    Computer Science
+                                </label>
+                                <label for="math">
+                                    <input type="radio" name="major" value="Mathematics"/>
+                                    Mathematics
+                                </label>
+                                <label for="both">
+                                    <input type="radio" name="major" value="Both CS and Math"/>
+                                    Both CS and Math
+                                </label>
+                            <p>If you are doing a CS major, what concentration are you completing?</p>
+                                <label for="data-science">
+                                    <input type="radio" name="cs-track" value="Data Science"/>
+                                    Data Science
+                                </label>
+                                <label for="ai">
+                                    <input type="radio" name="cs-track" value="Artificial Intelligence"/>
+                                    Artificial Intelligence
+                                </label>
+                                <label for="robot">
+                                    <input type="radio" name="cs-track" value="Robot Intelligence"/>
+                                    Robot Intelligence
+                                </label>
+                                <label for="bio">
+                                    <input type="radio" name="cs-track" value="Bioinformatics"/>
+                                    Data Science
+                                </label>
+                                <label for="business">
+                                    <input type="radio" name="cs-track" value="Business and Entrepreneurship"/>
+                                    Business and Entrepreneurship
+                                </label>
+                                <label for="human">
+                                    <input type="radio" name="cs-track" value="Human-Computer Interaction"/>
+                                    Human-Computer Interaction
+                                </label>
+                                <label for="games">
+                                    <input type="radio" name="cs-track" value="Simulation and Game Programming"/>
+                                    Simulation and Game Programming
+                                </label>
+                                <label for="web-dev">
+                                    <input type="radio" name="cs-track" value="Web and Mobile Application Development"/>
+                                    Web and Mobile Application Development
+                                </label>
+                                <label for="sw-eng">
+                                    <input type="radio" name="cs-track" value="Software Engineering"/>
+                                    Software Engineering (Cascades Only)
+                                </label>
+                                <label for="sw-ent">
+                                    <input type="radio" name="cs-track" value="Software Entrepreneurship"/>
+                                    Software Entrepreneurship (Cascades Only)
+                                </label>
+                                <label for="systems">
+                                    <input type="radio" name="cs-track" value="Computer Systems"/>
+                                    Computer Systems
+                                </label>
+                                <label for="cyber">
+                                    <input type="radio" name="cs-track" value="Cybersecurity"/>
+                                    Cybersecurity
+                                </label>
+                                <label for="postbac">
+                                    <input type="radio" name="cs-track" value="Postbaccalaureate"/>
+                                    Postbaccalaureate Student
+                                </label>
+                            <p>If you are doing a mathematics major, which concentration are you doing, if any?</p>
+                                <label for="none">
+                                    <input type="radio" name="math-track" value="I am not doing a concentration"/>
+                                    I am not doing a concentration
+                                </label>
+                                <label for="applied">
+                                    <input type="radio" name="math-track" value="Applied and Computational Mathematics"/>
+                                    Applied and Computational Mathematics
+                                </label>
+                                <label for="math-bio">
+                                    <input type="radio" name="cs-track" value="Mathematical Biology"/>
+                                    Mathematical Biology
+                                </label>
+                                <label for="teaching">
+                                    <input type="radio" name="cs-track" value="Secondary Teaching"/>
+                                    Secondary Teaching
+                                </label>
+                                <label for="statistics">
+                                    <input type="radio" name="cs-track" value="Statistics"/>
+                                    Statistics
+                                </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>If you are completing any minors, list them here.</legend>
+                            <p>Are you completing any minors? Choose all that apply.</p>
+                                <label for="actuary-minor">
+                                    <input type="checkbox" name="minors" value="Actuarial Science">
+                                    Actuarial Science
+                                </label>
+                                <label for="biology">
+                                    <input type="checkbox" name="minors" value="Biology">
+                                    Biology
+                                </label>
+                                <label for="bio-data-science">
+                                    <input type="checkbox" name="minors" value="Biological Data Sciences">
+                                    Biological Data Sciences
+                                </label>
+                                <label for="bus-systems">
+                                    <input type="checkbox" name="minors" value="Business Information Systems">
+                                    Business Information Systems
+                                </label>
+                                <label for="bus-minor">
+                                    <input type="checkbox" name="minors" value="Business">
+                                    Business
+                                </label>
+                                <label for="cs-minor">
+                                    <input type="checkbox" name="minors" value="Computer Science">
+                                    Computer Science
+                                </label>
+                                <label for="cyber-manage">
+                                    <input type="checkbox" name="minors" value="Cybersecurity Management">
+                                    Cybersecurity Management
+                                </label>
+                                <label for="education">
+                                    <input type="checkbox" name="minors" value="Education">
+                                    Education
+                                </label>
+                                <label for="graphic-design">
+                                    <input type="checkbox" name="minors" value="Graphic Design">
+                                    Graphic Design
+                                </label>
+                                <label for="math-minor">
+                                    <input type="checkbox" name="minors" value="Mathematics">
+                                    Mathematics
+                                </label>
+                                <label for="physics">
+                                    <input type="checkbox" name="minors" value="Physics">
+                                    Physics
+                                </label>
+                                <label for="psychology">
+                                    <input type="checkbox" name="minors" value="Psychology">
+                                    Psychology
+                                </label>
+                                <label for="stats">
+                                    <input type="checkbox" name="minors" value="Statistics">
+                                    Statistics
+                                </label>
+                                <label for="ux">
+                                    <input type="checkbox" name="minors" value="User Experience Research">
+                                    User Experience Research
+                                </label>
+                    </fieldset>
                 </form>
             </section>
         </main>
