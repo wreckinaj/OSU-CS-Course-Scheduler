@@ -14,7 +14,7 @@
             <section>
                 <form action="/results" method="POST">
                     <fieldset>
-                        <legend>Discuss your major and track here.</legend>
+                        <legend>Discuss your majorhere.</legend>
                             <p>What is your major?</p>
                                 <label for="cs">
                                     <input type="radio" name="major" value="Computer Science"/>
@@ -28,7 +28,32 @@
                                     <input type="radio" name="major" value="Both CS and Math"/>
                                     Both CS and Math
                                 </label>
-                            <p>If you are doing a CS major, what concentration are you completing?</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>If you are doing a CS major, fill this field out.</legend>
+                            <p>Please note by adding a CS major, you have added the following requirements:</p>
+                            <ul>
+                                <li>Either COMM 114 (Argument and Critical Discourse) or COMM 111Z (Public Speaking)</li>
+                                <li>WR 121Z (Composition I)</li>
+                                <li>WR 214 (Writing in Business)</li>
+                                <li>WR 227Z (Technical Writing)</li>
+                                <li>MTH 231 (Elements of Discrete Mathematics)</li>
+                                <li>MTH 251 (Differential Calculus)</li>
+                                <li>MTH 252 (Integral Calculus)</li>
+                                <li>ENGR 100 (The Oregon State Engineering Student)</li>
+                                <li>ENGR 102 (Design Engineering and Problem Solving)</li>
+                                <li>ENGR 103 (Engineering Computation and Algorithmic Thinking)</li>
+                                <li>CS 162 (Introduction to Computer Science II)</li>
+                                <li>CS 261 (Data Structures)</li>
+                                <li>CS 290 (Web Development)</li>
+                                <li>CS 325 (Analysis of Algorithms)</li>
+                                <li>CS 340 (Introduction to Databases)</li>
+                                <li>CS 361 (Software Engineering I)</li>
+                                <li>CS 362 (Software Engineering II)</li>
+                                <li>CS 374 (Operating Systems I)</li>
+                                <li>Either CS 391 (Social and Ethical Issues in Computer Science) or PHL 330 (Technology and Ethics)</li>
+                            </ul>
+                            <p>What concentration are you completing?</p>
                                 <label for="data-science">
                                     <input type="radio" name="cs-track" value="Data Science"/>
                                     Data Science
@@ -81,7 +106,25 @@
                                     <input type="radio" name="cs-track" value="Postbaccalaureate"/>
                                     Postbaccalaureate Student
                                 </label>
-                            <p>If you are doing a mathematics major, which concentration are you doing, if any?</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>If you are doing a mathematics major, fill this field out.</legend>
+                            <p>Please note by adding the mathematics major, the following classes have been added by default:</p>
+                            <ul>
+                                <li>MTH 251 (Differential Calculus)</li>
+                                <li>MTH 252 (Integral Calculus)</li>
+                                <li>MTH 253 (Infinite Series and Sequences)</li>
+                                <li>MTH 254 (Vector Calculus I)</li>
+                                <li>MTH 255 (Vector Calculus II)</li>
+                                <li>MTH 256 (Applied Differential Equations)</li>
+                                <li>MTH 310 (Foundations of Mathematics)</li>
+                                <li>MTH 311 (Advanced Calculus I)</li>
+                                <li>MTH 312 (Advanced Calculus II)</li>
+                                <li>MTH 341 (Linear Algebra I)</li>
+                                <li>MTH 342 (Linear Algebra II)</li>
+                                <li>MTH 343 (Introduction to Modern Algebra)</li>
+                            </ul>
+                            <p>Which concentration are you doing, if any?</p>
                                 <label for="none">
                                     <input type="radio" name="math-track" value="I am not doing a concentration"/>
                                     I am not doing a concentration
@@ -165,38 +208,81 @@
                     </fieldset>
                     <fieldset>
                         <legend>If you are in the data science field, fill this field out.</legend>
-                            <p>What classes are you considering for your concentration? Choose all that apply.</p>
+                            <p>Please note by adding the data science track, you have added the following required classes:</p>
+                            <ul>
+                                <li>ST 314 (Introduction to Statistics for Engineers)</li>
+                                <li>CS 271 (Computer Architecture and Assembly Language)</li>
+                                <li>CS 434 (Machine Learning and Data Mining)</li>
+                                <li>CS 461 (Senior Software Engineering Project I)</li>
+                                <li>CS 462 (Senior Software Engineering Project II)</li>
+                                <li>CS 463 (Senior Software Engineering Project III)</li>
+                                <li>CS 475 (Introduction to Parallel Programming)</li>
+                                <li>MTH 254 (Vector Calculus I)</li>
+                                <li>MTH 341 (Linear Algebra I)</li>
+                                <li>ST 421 (Introduction to Mathematical Statistics I)</li>
+                            </ul>
+                            <p>Do you wish to take either CS 453 or CS 458? Choose one from below.</p>
+                            <label for="cs-453">
+                                <input type="radio" name="classes" value="CS 453">
+                                CS 453 (Scientific Visualization)
+                            </label>
+                            <label for="cs-458">
+                                <input type="radio" name="classes" value="CS 458">
+                                CS 458 (Introduction to Information Visualization)
+                            </label>
+                            <p>What classes are you considering for your concentration? Choose at least 5 credits.</p>
                             <label for="cs-321">
                                 <input type="checkbox" name="classes" value="CS 321">
-                                CS 321 (Intro to Theory of Computation)
+                                CS 321 (Intro to Theory of Computation) (3)
                             </label>
                             <label for="cs-331">
                                 <input type="checkbox" name="classes" value="CS 331">
-                                CS 331 (Intro to Artificial Intelligence)
+                                CS 331 (Intro to Artificial Intelligence) (4)
                             </label>
                             <label for="cs-420">
                                 <input type="checkbox" name="classes" value="CS 420">
-                                CS 420 (Graph Theory with Applications to Computer Science)
+                                CS 420 (Graph Theory with Applications to Computer Science) (3)
                             </label>
                             <label for="cs-492">
                                 <input type="checkbox" name="classes" value="CS 492">
-                                CS 492 (Mobile Software Development)
+                                CS 492 (Mobile Software Development) (4)
                             </label>
                             <label for="cs-493">
                                 <input type="checkbox" name="classes" value="CS 493">
-                                CS 493 (Cloud Application Development)
+                                CS 493 (Cloud Application Development) (4)
                             </label>
                             <label for="mth-342">
                                 <input type="checkbox" name="classes" value="MTH 342">
-                                MTH 342 (Linear Algebra II)
+                                MTH 342 (Linear Algebra II) (4)
                             </label>
                             <label for="mth-451">
                                 <input type="checkbox" name="classes" value="MTH 451">
-                                MTH 451 (Numerical Linear Algebra)
+                                MTH 451 (Numerical Linear Algebra) (3)
                             </label>
                             <label for="st-422">
                                 <input type="checkbox" name="classes" value="ST 422">
-                                ST 422 (Intro to Mathematical Statistics II)
+                                ST 422 (Intro to Mathematical Statistics II) (4)
+                            </label>
+                            <p>Choose which 4 applied CS electives you wish to take below.</p>
+                            <label for="cs-352">
+                                <input type="checkbox" name="classes" value="CS 352">
+                                CS 352 (Introduction to Usability Engineering)
+                            </label>
+                            <label for="cs-370">
+                                <input type="checkbox" name="classes" value="CS 370">
+                                CS 370 (Introduction to Security)
+                            </label>
+                            <label for="cs-372">
+                                <input type="checkbox" name="classes" value="CS 372">
+                                CS 372 (Introduction to Computer Networks)
+                            </label>
+                            <label for="cs-381">
+                                <input type="checkbox" name="classes" value="CS 381">
+                                CS 381 (Programming Language Fundamentals)
+                            </label>
+                            <label for="cs-474">
+                                <input type="checkbox" name="classes" value="CS 474">
+                                CS 474 (Operating Systems II)
                             </label>
                     </fieldset>
                     <fieldset>
